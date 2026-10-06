@@ -42,7 +42,7 @@ export default function WelcomePage(){
               source={require('../assets/images/Ice Cube Photopea 1.png')} style={styles.welcomeLogo}
             />
 
-            <Text style={styles.title}>Icebreaker</Text>
+            <Text style={styles.title}>Icebreakers</Text>
             {/* image will go here */}
             <Text style={styles.title2}>Break the Ice on Campus</Text>
             

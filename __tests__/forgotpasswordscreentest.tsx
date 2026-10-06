@@ -71,7 +71,7 @@ describe("<ForgotPasswordScreen />", () => {
       expect(sendPasswordResetEmail).not.toHaveBeenCalled();
       expect(showAlert).toHaveBeenCalledWith(
         "Account not found",
-        "No account exists for that email address. Enter the email tied to your SocialCards account.",
+        "No account exists for that email address. Enter the email tied to your Icebreakers account.",
       );
     });
   });

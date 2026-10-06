@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>Account action | SocialCards</title>
+    <title>Account action | Icebreakers</title>
     <style>
       :root {
         color-scheme: light;
@@ -170,10 +170,10 @@
   </head>
   <body>
     <main class="card">
-      <p class="eyebrow">SocialCards</p>
+      <p class="eyebrow">Icebreakers</p>
       <h1 id="pageTitle">Account action</h1>
       <p id="pageDescription">
-        Finish the account action you requested for SocialCards.
+        Finish the account action you requested for Icebreakers.
       </p>
 
       <div id="status" class="status" role="status" aria-live="polite">
@@ -289,7 +289,7 @@
               .applyActionCode(actionCode)
               .then(function () {
                 setStatus(
-                  "Your email has been verified. Return to SocialCards and log in again.",
+                  "Your email has been verified. Return to Icebreakers and log in again.",
                   "success",
                 );
                 verifyButton.hidden = true;
@@ -310,7 +310,7 @@
 
         setPageContent(
           "Reset your password",
-          "Choose a new password for your SocialCards account below.",
+          "Choose a new password for your Icebreakers account below.",
         );
         setStatus("Checking your password reset link...");
 
@@ -355,7 +355,7 @@
             .confirmPasswordReset(actionCode, newPassword)
             .then(function () {
               setStatus(
-                "Your password has been reset. Return to SocialCards and log in with your new password.",
+                "Your password has been reset. Return to Icebreakers and log in with your new password.",
                 "success",
               );
               resetForm.hidden = true;

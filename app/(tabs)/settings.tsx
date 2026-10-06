@@ -271,13 +271,13 @@ export default function SettingsPage(){
             
             {/* Question 1 */}
             <TouchableOpacity style={styles.primaryButton2} onPress={toggleQ1}>
-                <Text style={styles.thirdButtonText}>What Should my Social Card Look Like?</Text>
+                <Text style={styles.thirdButtonText}>What Should My Profile Card Look Like?</Text>
             </TouchableOpacity>
             
             { isVisible && (
             <Text style={styles.foruthText}>
-                While Social Cards have a specific fields available to fill out, there is no 
-                way that it should look like. Each Social Card is unique to the user! But we understand
+                While Icebreakers has specific profile fields available to fill out, there is no
+                way that it should look like. Each profile card is unique to the user! But we understand
                 that it may be difficult to make one from scratch, so here is a template you can look at
                 from our old pal Icy the Icecube!
             </Text>
@@ -314,7 +314,7 @@ export default function SettingsPage(){
             
             { isVisible3 && (
             <Text style={styles.foruthText}>
-                This is a common question we have here at Social Cards. Currently there is no way to recover an account
+                This is a common question we have here at Icebreakers. Currently there is no way to recover an account
                 that you do not know the email of. However, password recovery is a feature implemented on this application.
                 To start this process, go to the Login Page and click &quot;Forgot Password&quot;. This will prompt the user to check out their
                 email and click the link. This link will bring you to a page where you can update your password, which will update for all 
@@ -332,10 +332,10 @@ export default function SettingsPage(){
             { isVisible4 && (
             <Text style={styles.foruthText}>
                 Avatar icons are mandatory to choose, and part of the signup process. By default, the avatar icon you choose will be the image displayed
-                on your social card for others to see. Also in the signup process, you can choose to take a picture using the application. As it currently stands,
-                if you have both a profile picture and a avatar icon, your social card will display the profile picture. However, if a user is not comfortable with displaying
+                on your profile card for others to see. Also in the signup process, you can choose to take a picture using the application. As it currently stands,
+                if you have both a profile picture and a avatar icon, your profile card will display the profile picture. However, if a user is not comfortable with displaying
                 their profile picture, they can go to Profile, then Edit, then select Profile Picture under Visible Before Connection, and toggle it so that it is showing grey.
-                This will make it so that people who intially see your social card see you avatar icon, and only those that match with you will see your profile picture.
+                This will make it so that people who intially see your profile card see you avatar icon, and only those that match with you will see your profile picture.
               
                 If you have made an account and opted to skip taking a profile picture, worry not! To add your first profile picture or update your current pciture, simply go to
                 Profile, then click Edit, then on the top of the page, under Profile Image, click &quot;Take New Photo&quot;. This will then update after the user
@@ -350,9 +350,9 @@ export default function SettingsPage(){
             
             { isVisible5 && (
             <Text style={styles.foruthText}>
-                There are two locations where you can report another user from. The first option is on the Home page. On the offending user&apos;s social card, there is 
+                There are two locations where you can report another user from. The first option is on the Home page. On the offending user&apos;s profile card, there is
                 several buttons on the bottom right of the card. The red button titled &quot;Report&quot;, when clicked, will display a report form that after being filled out will be
-                investigated by someone on the Social Cards Developemnt team and an appropriate punishment will be given to the offending user. The second location that the report button
+                investigated by someone on the Icebreakers development team and an appropriate punishment will be given to the offending user. The second location that the report button
                 can be found is in the personal message page between two users. On the top right of the message page, there should be a similar red button titled &quot;Report&quot;, that gives the same report form 
                 as the one on the Home Page. It is also recomended that if you report a user for malicous behavior that you also Block them as well so that the have no further way of contacting you or viewing 
                 your profile.

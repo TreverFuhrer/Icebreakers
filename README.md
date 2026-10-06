@@ -1,10 +1,10 @@
-# Social Cards | Campus Icebreaker
+# Icebreakers | Meet Nearby Classmates
 
 A University of Wisconsin-Milwaukee computer science capstone built by Trever Fuhrer, Samuel Gaudet, Solomon Yang, Ignacio Vega Rivera, Lauren Knutson, and Jersemy De Jesus.
 
 **Meet nearby classmates. Break the ice. Take the conversation offline.**
 
-Social Cards is a React Native + Firebase app for discovering students within roughly 300 feet, exchanging connection requests, and starting a conversation through a 24-hour chat window.
+Icebreakers is a React Native + Firebase app for discovering students within roughly 300 feet, exchanging connection requests, and starting a conversation through a 24-hour chat window.
 
 **My role: original concept, location services, notifications, and onboarding.** I built the device-to-cloud location pipeline and notification features, improved registration flows, and resolved bugs involving stale presence and deleted accounts.
 
@@ -37,7 +37,7 @@ Contributed to the initial Firebase integration and authentication flow, improve
 ## What the app does
 
 - **Student onboarding:** `.edu` email registration, email verification, academic details, hobbies, icebreaker answers, avatars, and profile photos.
-- **Nearby discovery:** social cards for active users in a nominal 300-foot radius, with GPS accuracy buffering.
+- **Nearby discovery:** profile cards for active users in a nominal 300-foot radius, with GPS accuracy buffering.
 - **Connections and chat:** accept or decline requests, view connection history, and exchange real-time messages during a 24-hour window enforced by the client.
 - **Profile controls:** edit profile details and choose which fields appear before connecting; photos and last names are hidden by default in the UI.
 - **Account and interaction controls:** block or report users, reset passwords, log out, and delete accounts with backend data cleanup.
@@ -74,8 +74,8 @@ Use Node.js 22 and npm. The app requires a configured Firebase project; cloning 
 ### 1. Install
 
 ```bash
-git clone https://github.com/TreverFuhrer/Social-Cards.git
-cd Social-Cards
+git clone https://github.com/TreverFuhrer/Icebreakers.git
+cd Icebreakers
 npm ci
 npm ci --prefix backend
 ```
@@ -103,7 +103,7 @@ firebase deploy --only functions,firestore
 
 The client calls functions in `us-central1`. Configure Storage access for authenticated profile-photo uploads and add your development host to Authentication's authorized domains. For the custom verification/reset page, deploy Firebase Hosting and adapt the [email verification setup](docs/firebase-email-verification.md) to your project.
 
-The copied `app.json` retains the team's Expo owner and EAS project ID. Configure your own Expo project and push credentials when building independently.
+The app is branded **Icebreakers**. Existing Firebase resource IDs and Expo identifiers retain their original values so the rename does not disconnect the project's services. The copied `app.json` retains the team's Expo slug, owner, EAS project ID, iOS bundle identifier, and URL scheme. Configure your own Expo project and push credentials when building independently.
 
 ### 3. Start the client
 
@@ -145,8 +145,8 @@ We developed the project through shared design discussions, task planning in Tre
 | **Solomon Yang** | Messaging; password recovery; logout; account deletion; registration data handling; connection and account fixes |
 | **Ignacio Vega Rivera** | Screen scaffolding and navigation; registration and settings; profile styling; camera capture and photo cropping; refactoring and bug fixes |
 | **Lauren Knutson** | Figma/UI design; icebreaker prompts; avatar artwork and selection; registration navigation; settings styling; 404 page |
-| **Jersemy De Jesus** | Figma/UI design; onboarding and registration styling; social cards; profile-photo and messaging screens; input usability improvements |
+| **Jersemy De Jesus** | Figma/UI design; onboarding and registration styling; profile cards; profile-photo and messaging screens; input usability improvements |
 
 ## Repository history
 
-This portfolio copy preserves the [original team repository](https://github.com/sngaudet/Social-Cards), all 11 original branches, and all 239 available original commits with their authors, timestamps, and hashes intact. The `archive/original-pr-61` tag retains one commit reachable only through the original repository's pull-request reference. The rewritten README is a new commit on top of the original `main` history.
+This portfolio copy preserves the [original team repository](https://github.com/sngaudet/Social-Cards), all 11 original branches, and all 239 available original commits with their authors, timestamps, and hashes intact. The `archive/original-pr-61` tag retains one commit reachable only through the original repository's pull-request reference. The README and Icebreakers branding updates are new commits on top of the original `main` history. Original repository URLs and archived project documents retain their historical names.
